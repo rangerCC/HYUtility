@@ -110,6 +110,7 @@
 				TargetAttributes = {
 					420B5FAA1DB4AE890022DD61 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 6547856335;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -270,6 +271,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6547856335;
 				INFOPLIST_FILE = HYUtility/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hengyang.HYUtility;
@@ -281,6 +283,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6547856335;
 				INFOPLIST_FILE = HYUtility/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hengyang.HYUtility;
@@ -307,6 +310,7 @@
 				420B5FC41DB4AE890022DD61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

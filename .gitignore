@@ -18,6 +18,8 @@ Pods/
 !default.perspectivev3
 xcuserdata/
 
+HYUtility.xcodeproj/project.xcworkspace/
+
 ## Other
 *.moved-aside
 *.xcuserstate

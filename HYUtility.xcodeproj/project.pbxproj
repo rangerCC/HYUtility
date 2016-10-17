@@ -15,6 +15,8 @@
 		420B5FC91DB4B0E60022DD61 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 420B5FC61DB4B0E60022DD61 /* Default.png */; };
 		420B5FCA1DB4B0E60022DD61 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 420B5FC71DB4B0E60022DD61 /* Default@2x.png */; };
 		420B5FCC1DB4B0F00022DD61 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 420B5FCB1DB4B0F00022DD61 /* icon.png */; };
+		420B5FD01DB4B1CE0022DD61 /* HYLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 420B5FCF1DB4B1CE0022DD61 /* HYLog.m */; };
+		C1C1191EA2D8941BF504E17A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C27A61356F454D12E8AA30 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,12 @@
 		420B5FC61DB4B0E60022DD61 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = "../../../Desktop/常用2/Default.png"; sourceTree = "<group>"; };
 		420B5FC71DB4B0E60022DD61 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../../../Desktop/常用2/Default@2x.png"; sourceTree = "<group>"; };
 		420B5FCB1DB4B0F00022DD61 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../../../Desktop/icon.png; sourceTree = "<group>"; };
+		420B5FCE1DB4B1CE0022DD61 /* HYLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYLog.h; sourceTree = "<group>"; };
+		420B5FCF1DB4B1CE0022DD61 /* HYLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYLog.m; sourceTree = "<group>"; };
+		420B5FD11DB4B56D0022DD61 /* HYUtility.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYUtility.pch; sourceTree = "<group>"; };
+		9CF9FC36B7971B060505E934 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D5C27A61356F454D12E8AA30 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8AEB90AD08E1056E6B2BAC3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1C1191EA2D8941BF504E17A /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		172A3581A4897CBDC0ED264A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9CF9FC36B7971B060505E934 /* Pods.debug.xcconfig */,
+				F8AEB90AD08E1056E6B2BAC3 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1FB6771348002BC5E3E5780F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5C27A61356F454D12E8AA30 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		420B5FA21DB4AE890022DD61 = {
 			isa = PBXGroup;
 			children = (
 				420B5FAD1DB4AE890022DD61 /* HYUtility */,
 				420B5FAC1DB4AE890022DD61 /* Products */,
+				172A3581A4897CBDC0ED264A /* Pods */,
+				1FB6771348002BC5E3E5780F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +90,7 @@
 		420B5FAD1DB4AE890022DD61 /* HYUtility */ = {
 			isa = PBXGroup;
 			children = (
+				420B5FCD1DB4B1C40022DD61 /* Log */,
 				420B5FCB1DB4B0F00022DD61 /* icon.png */,
 				420B5FC51DB4B0E60022DD61 /* Default-568h@2x.png */,
 				420B5FC61DB4B0E60022DD61 /* Default.png */,
@@ -73,6 +102,7 @@
 				420B5FBA1DB4AE890022DD61 /* Assets.xcassets */,
 				420B5FBF1DB4AE890022DD61 /* Info.plist */,
 				420B5FAE1DB4AE890022DD61 /* Supporting Files */,
+				420B5FD11DB4B56D0022DD61 /* HYUtility.pch */,
 			);
 			path = HYUtility;
 			sourceTree = "<group>";
@@ -85,6 +115,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		420B5FCD1DB4B1C40022DD61 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				420B5FCE1DB4B1CE0022DD61 /* HYLog.h */,
+				420B5FCF1DB4B1CE0022DD61 /* HYLog.m */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -92,9 +131,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 420B5FC21DB4AE890022DD61 /* Build configuration list for PBXNativeTarget "HYUtility" */;
 			buildPhases = (
+				68A145D8426F5D7536FEBE1B /* Check Pods Manifest.lock */,
 				420B5FA71DB4AE890022DD61 /* Sources */,
 				420B5FA81DB4AE890022DD61 /* Frameworks */,
 				420B5FA91DB4AE890022DD61 /* Resources */,
+				67A8FC3CD11DE71CDC553664 /* Embed Pods Frameworks */,
+				EE30786409D8E2A62231E2EC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -154,12 +196,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		67A8FC3CD11DE71CDC553664 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68A145D8426F5D7536FEBE1B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EE30786409D8E2A62231E2EC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		420B5FA71DB4AE890022DD61 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				420B5FB61DB4AE890022DD61 /* ViewController.m in Sources */,
+				420B5FD01DB4B1CE0022DD61 /* HYLog.m in Sources */,
 				420B5FB31DB4AE890022DD61 /* AppDelegate.m in Sources */,
 				420B5FB01DB4AE890022DD61 /* main.m in Sources */,
 			);
@@ -258,9 +349,11 @@
 		};
 		420B5FC31DB4AE890022DD61 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CF9FC36B7971B060505E934 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6547856335;
+				GCC_PREFIX_HEADER = HYUtility/HYUtility.pch;
 				INFOPLIST_FILE = HYUtility/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hengyang.HYUtility;
@@ -270,9 +363,11 @@
 		};
 		420B5FC41DB4AE890022DD61 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8AEB90AD08E1056E6B2BAC3 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6547856335;
+				GCC_PREFIX_HEADER = HYUtility/HYUtility.pch;
 				INFOPLIST_FILE = HYUtility/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hengyang.HYUtility;

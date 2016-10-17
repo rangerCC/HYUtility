@@ -1,0 +1,14 @@
+//
+//  HYUtility.pch
+//  HYUtility
+//
+//  Created by 恒阳 on 16/10/17.
+//  Copyright © 2016年 恒阳. All rights reserved.
+//
+
+#ifndef HYUtility_pch
+#define HYUtility_pch
+
+#import "FMDB.h"
+
+#endif /* HYUtility_pch */

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6D4A998978444C5F7AB31B23B5A6988C4C6C5E65",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6D4A998978444C5F7AB31B23B5A6988C4C6C5E65" : 9223372036854775807,
+    "8CFEB7863264194B5CF6E9DD0F79C1128CE9B54E" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "FA18210C-53E6-457E-8331-5F6D12727DF7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6D4A998978444C5F7AB31B23B5A6988C4C6C5E65" : "HYUtility\/",
+    "8CFEB7863264194B5CF6E9DD0F79C1128CE9B54E" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "HYUtility",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "HYUtility\/HYUtility.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/rangerCC\/HYUtility",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6D4A998978444C5F7AB31B23B5A6988C4C6C5E65"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:rangerCC\/MultiProjTest.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8CFEB7863264194B5CF6E9DD0F79C1128CE9B54E"
+    }
+  ]
+}

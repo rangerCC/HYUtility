@@ -9,6 +9,7 @@
 #ifndef HYUtility_pch
 #define HYUtility_pch
 
+#import "HYSignal.h"
 #import "FMDB.h"
 
 #endif /* HYUtility_pch */

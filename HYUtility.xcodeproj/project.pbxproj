@@ -16,6 +16,8 @@
 		420B5FCA1DB4B0E60022DD61 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 420B5FC71DB4B0E60022DD61 /* Default@2x.png */; };
 		420B5FCC1DB4B0F00022DD61 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 420B5FCB1DB4B0F00022DD61 /* icon.png */; };
 		420B5FD01DB4B1CE0022DD61 /* HYLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 420B5FCF1DB4B1CE0022DD61 /* HYLog.m */; };
+		420B5FD51DB4C3350022DD61 /* HYSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 420B5FD41DB4C3350022DD61 /* HYSignal.m */; };
+		420B5FD81DB4C6930022DD61 /* HYSignalDemoUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 420B5FD71DB4C6930022DD61 /* HYSignalDemoUI.m */; };
 		C1C1191EA2D8941BF504E17A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C27A61356F454D12E8AA30 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,10 @@
 		420B5FCE1DB4B1CE0022DD61 /* HYLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYLog.h; sourceTree = "<group>"; };
 		420B5FCF1DB4B1CE0022DD61 /* HYLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYLog.m; sourceTree = "<group>"; };
 		420B5FD11DB4B56D0022DD61 /* HYUtility.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYUtility.pch; sourceTree = "<group>"; };
+		420B5FD31DB4C3350022DD61 /* HYSignal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSignal.h; sourceTree = "<group>"; };
+		420B5FD41DB4C3350022DD61 /* HYSignal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSignal.m; sourceTree = "<group>"; };
+		420B5FD61DB4C6930022DD61 /* HYSignalDemoUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSignalDemoUI.h; sourceTree = "<group>"; };
+		420B5FD71DB4C6930022DD61 /* HYSignalDemoUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSignalDemoUI.m; sourceTree = "<group>"; };
 		9CF9FC36B7971B060505E934 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D5C27A61356F454D12E8AA30 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8AEB90AD08E1056E6B2BAC3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -90,6 +96,7 @@
 		420B5FAD1DB4AE890022DD61 /* HYUtility */ = {
 			isa = PBXGroup;
 			children = (
+				420B5FD21DB4C3080022DD61 /* Signal */,
 				420B5FCD1DB4B1C40022DD61 /* Log */,
 				420B5FCB1DB4B0F00022DD61 /* icon.png */,
 				420B5FC51DB4B0E60022DD61 /* Default-568h@2x.png */,
@@ -103,6 +110,8 @@
 				420B5FBF1DB4AE890022DD61 /* Info.plist */,
 				420B5FAE1DB4AE890022DD61 /* Supporting Files */,
 				420B5FD11DB4B56D0022DD61 /* HYUtility.pch */,
+				420B5FD61DB4C6930022DD61 /* HYSignalDemoUI.h */,
+				420B5FD71DB4C6930022DD61 /* HYSignalDemoUI.m */,
 			);
 			path = HYUtility;
 			sourceTree = "<group>";
@@ -122,6 +131,15 @@
 				420B5FCF1DB4B1CE0022DD61 /* HYLog.m */,
 			);
 			path = Log;
+			sourceTree = "<group>";
+		};
+		420B5FD21DB4C3080022DD61 /* Signal */ = {
+			isa = PBXGroup;
+			children = (
+				420B5FD31DB4C3350022DD61 /* HYSignal.h */,
+				420B5FD41DB4C3350022DD61 /* HYSignal.m */,
+			);
+			path = Signal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,8 +268,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				420B5FB61DB4AE890022DD61 /* ViewController.m in Sources */,
+				420B5FD81DB4C6930022DD61 /* HYSignalDemoUI.m in Sources */,
 				420B5FD01DB4B1CE0022DD61 /* HYLog.m in Sources */,
 				420B5FB31DB4AE890022DD61 /* AppDelegate.m in Sources */,
+				420B5FD51DB4C3350022DD61 /* HYSignal.m in Sources */,
 				420B5FB01DB4AE890022DD61 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
